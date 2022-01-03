@@ -8,7 +8,9 @@ public class Matrix2D {
 		int row;
 
 		int col;
-
+		
+		int largest;
+		
 		int matrix[][] = new int[7][6];
 
 		for (row = 0; row < matrix.length; row++)
@@ -22,6 +24,14 @@ public class Matrix2D {
 		    System.out.println();
 
 		}
+		for (row = 0; row < matrix.length; row++)
+		{
+		  largest = matrix[row][0];
+		  for (col = 1; col < matrix[row].length; col++)
+			if (largest < matrix[row][col])
+			    largest = matrix[row][col];
+		  System.out.println("The largest element of row" + (row+1) + "=" + largest);
+		}    
 
 
 	}
