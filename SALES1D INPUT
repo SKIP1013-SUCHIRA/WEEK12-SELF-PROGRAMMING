@@ -1,0 +1,14 @@
+package selfProgramming;
+
+public class Sales1D {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double[]sales = {12.25, 32.50, 16.90, 23.00, 45.68};
+
+		for (int i=0; i<sales.length; i++)
+			System.out.println("Sales are " + "index " + i +"= " + sales[i]);
+	}
+
+}
