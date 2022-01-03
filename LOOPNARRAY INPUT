@@ -1,0 +1,49 @@
+package selfProgramming;
+
+public class LoopsNArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double[] sales = new double[10];
+		int index, maxIndex;
+		double sum, average;
+		double largestSale;
+		
+		sales[0]=12.50;
+		sales[1]=8.35;
+		sales[2]=19.60;
+		sales[3]=25.00;
+		sales[4]=14.00;
+		sales[5]=39.43;
+		sales[6]=35.90;
+		sales[7]=98.23;
+		sales[8]=66.65;
+		sales[9]=35.64;
+
+		sum = 0;
+		for(index = 0; index < sales.length;index++)
+			sum = sum + sales[index];
+			System.out.println("Sum is "+sum);
+		{
+		if (sales.length != 0)
+		    average = sum / sales.length;
+		else
+		    average = 0.0;
+		}
+		System.out.println("The average is "+average);
+
+		maxIndex = 0;
+
+		for(index = 1; index<sales.length;index++) 
+		   if (sales[maxIndex] < sales[index])
+		   {
+			   maxIndex = index;
+		   }
+		largestSale = sales[maxIndex];
+		System.out.println("The largest sales is "+largestSale);
+
+
+	}
+
+}
