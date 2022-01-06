@@ -1,0 +1,28 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+public class ReturnMethod {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		int old = readAge();
+		System.out.println("My age is " + old + "y/o");
+
+	}
+
+	public static int readAge()
+	{
+		Scanner read = new Scanner(System.in);
+		int age=0;
+		do {
+			System.out.println("Please enter age(1-100): ");
+			age=read.nextInt();
+		}while ((age<1)||(age>100));
+		return age;
+	}
+	
+	
+}
